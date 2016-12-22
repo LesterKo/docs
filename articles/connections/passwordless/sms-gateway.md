@@ -23,7 +23,7 @@ This will return your SMS connection with your Twilio settings:
       "twilio_sid": "...",
       "twilio_token": "...",
       "from": "+1 234 567",
-      "template": "Your verification code is: @@password@@",
+      "template": "SourceCode: Your verification code is: @@password@@",
       "brute_force_protection": true,
       "disable_signup": false,
       "name": "sms",
@@ -54,7 +54,7 @@ You can now modify the options of the connection:
       "provider": "sms_gateway",
       "gateway_url": "{URL_OF_YOUR_GATEWAY}",
       "from": "+1 234 567",
-      "template": "Your verification code is: @@password@@",
+      "template": "SourceCode: Your verification code is: @@password@@",
       "brute_force_protection": true,
       "disable_signup": false,
       "name": "sms",
@@ -74,7 +74,7 @@ After updating the connection for any user that signs up or authenticates using 
 ```
 {
   "recipient": "+1 399 999",
-  "body": "Your verification code is: 12345",
+  "body": "SourceCode:Your verification code is: 12345",
   "sender": "+1 234 567",
 }
 ```
@@ -96,7 +96,7 @@ The previous settings assume your SMS Gateway accepts non-authenticated requests
             "secret": "MySecretToSignTheToken"
       },
       "from": "+1 234 567",
-      "template": "Your verification code is: @@password@@",
+      "template": "SourceCode: Your verification code is: @@password@@",
       "brute_force_protection": true,
       "disable_signup": false,
       "name": "sms",
